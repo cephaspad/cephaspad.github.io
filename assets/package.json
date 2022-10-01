@@ -1,0 +1,16 @@
+{
+  "name": "cephaspad.github.com",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/cephaspad/cephaspad.github.io"
+  },
+  "author": {
+    "name": "Cephas PAD",
+    "email": "me@cephaspad.com",
+    "url": "https://cephaspad.com"
+  },
+  "homepage": "https://cephaspad.com",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}
