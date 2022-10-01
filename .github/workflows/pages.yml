@@ -32,10 +32,11 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v2
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-        run: cd assets && npm install
+      - name: Restore packages
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 16
+          run: cd assets && npm install
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
