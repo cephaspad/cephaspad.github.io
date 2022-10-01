@@ -36,7 +36,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-        run: cd assets && npm install
+      - run: cd assets && npm install
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
