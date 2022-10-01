@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["main", "dev"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -30,8 +30,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
       - name: Restore packages
         uses: actions/setup-node@v3
         with:
